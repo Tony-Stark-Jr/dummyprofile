@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="My profilo website to showcase the work I done so far, the services I provide and all my professionals life."/>
+        <meta name="keywords" content="HTML, CSS, JavaScript, Personal Portfolio Website">
+        <meta name="author" content="Santosh Marar">
     <title>Dummy Profile</title>
     <!-- Link of Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -33,6 +37,11 @@
             </ul>
 
         </nav>
+        <div class="mobile-navbar-btn">
+            <ion-icon class="mobile-nav-icon" name="menu-outline"> </ion-icon>
+            <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </div>
+
     </header>
     <!-- Main Start -->
     <main>
@@ -114,7 +123,7 @@
                     </div>
                 </div>
                 <div class="bio-data-btn">
-                    <a class="btn" href="#">Download CV</a>
+                    <a class="btn" href="https://docs.google.com/document/d/1W3VNkxx6tXgY1f5_EcjzunpDmT5NiC0-tNDbk9Cg9y4/edit?usp=sharing" download target="_blank">Download CV</a>
                 </div>
             </div>
         </div>
@@ -207,22 +216,22 @@
     <section class="section section-work-data">
         <div class="container grid grid-four-column">
             <div>
-                <h2 class="counter-numbers">2000+</h2>
+                <h2 class="counter-numbers" data-number="200">0+</h2>
                 <p>Project Completed</p>
             </div>
 
             <div>
-                <h2 class="counter-numbers">6000+</h2>
+                <h2 class="counter-numbers" data-number="600">0+</h2>
                 <p>Happy clients</p>
             </div>
 
             <div>
-                <h2 class="counter-numbers">3000+</h2>
+                <h2 class="counter-numbers" data-number="300">0+</h2>
                 <p>Cups of Coffe</p>
             </div>
 
             <div>
-                <h2 class="counter-numbers">1000+</h2>
+                <h2 class="counter-numbers" data-number="500">0+</h2>
                 <p>Real Professional</p>
             </div>
         </div>
@@ -348,8 +357,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
             <div class="swiper-pagination"></div>
         </div>
@@ -361,7 +368,7 @@
     <section class="section section-freelancing">
         <div class="overlay"> </div>
         <div class="container">
-            <h2>I am <span>available</span>for freelancing</h2>
+            <h2>I am <span>available</span> for freelancing</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quia sed fuga.</p>
             <a href="/contact.html" class="btn">Hire Me</a>
         </div>
@@ -373,24 +380,27 @@
             <h2 class="common-heading">Contact Us</h2>
         </div>
         <div class="section-contact-main contact-container">
-            <form action="#">
+            <form action="https://formspree.io/f/xgedpazw" method="POST">
                 <div class="grid grid-two-column">
                     <div>
                         <label for="username"></label>
-                        <input type="text" name="username" id="username" placeholder="Your Name:">
+                        <input type="text" name="username" id="username" placeholder="Your Name:" autocomplete="off"
+                            required>
                     </div>
                     <div>
                         <label for="email"></label>
-                        <input type="email" name="email" id="email" placeholder="youremail@gmail.com">
+                        <input type="email" name="email" id="email" placeholder="youremail@gmail.com" required
+                            autocomplete="off">
                     </div>
                 </div>
                 <div>
                     <label for="subject"></label>
-                    <input type="text" name="subject" id="subject" placeholder="subject">
+                    <input type="text" name="subject" id="subject" placeholder="subject" autocomplete="off" required>
                 </div>
                 <div>
                     <label for="textarea"></label>
-                    <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                    <textarea name="textarea" id="textarea" cols="30" rows="10"
+                        placeholder="Any message for me"></textarea>
                 </div>
                 <input type="submit" value="send message" name="submit" id="submit" class="btn">
 
@@ -478,7 +488,7 @@
         </div>
         <div class="container">
             <div class="f-social-icons">
-                <a href="#" >
+                <a href="#">
                     <ion-icon name="logo-instagram" class="icons"></ion-icon>
                 </a>
                 <a href="#">

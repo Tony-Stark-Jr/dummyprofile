@@ -20,15 +20,15 @@
             width: 100%;
         }
 
-        .common-heading,.contact-container{
-padding-left:3rem ;
+        .common-heading,
+        .contact-container {
+            padding-left: 3rem;
         }
 
 
-    .section-footer{
+        .section-footer {
             margin-top: 3rem;
         }
-        
     </style>
 </head>
 
@@ -46,6 +46,11 @@ padding-left:3rem ;
             </ul>
 
         </nav>
+
+        <div class="mobile-navbar-btn">
+            <ion-icon class="mobile-nav-icon" name="menu-outline"> </ion-icon>
+            <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </div>
     </header>
 
     <!-- Contact Section Start -->
@@ -61,7 +66,8 @@ padding-left:3rem ;
 
 
         <div class="section-contact-main contact-container">
-            <form action="#">
+            <form  action="https://formspree.io/f/xgedpazw"
+            method="POST">
                 <div class="grid grid-two-column">
                     <div>
                         <label for="username"></label>
